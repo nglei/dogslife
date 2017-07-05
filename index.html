@@ -5,13 +5,36 @@
 	<link rel="icon" href ="dog fav.png" type="image/x-xicon">
 	<meta charset="utf-8">
 	<style>
+		
 		.head { overflow: hidden;
 				background-color: #72380a;
 				position: fixed; 
 				top: 0; 
 				width: 100%;}
+		.hometop{ position: absolute;
+						top:500px;
+						opacity: 0.4;
+						text-align: center;
+						width:1510px;
+						height:200px;
+						background-color: white;
+						font-size: 350%;}
+		.dogcarefloat { float: left;
+						margin-right: 10px;}
+		.trainingfloat { clear: left; 
+						 float: left;
+						 margin-right: 10px;}
+		.groomingfloat { float: right;
+						 margin: 10px;}
+		.boardingfloat { clear:right;
+						 float: right;
+						 margin-right: 250px;}
+		
+						
+		
 		header { text-align: center;
 				 color: #ffb77f;}
+		body { background-color: #99643b;}
 		nav {   background-color: #ffb172; 
 				letter-spacing: 0.1em;
 				font-weight: bold;
@@ -22,16 +45,20 @@
  	    nav ul { list-style-type: none; 
 					margin: 0;}
 
-		nav li:hover ul { display: block;}
-
 		nav li { padding: 0.5em;
-				 display: inline-block;}
+				 display: inline-block;
+				 font-size: 150%;}
 		nav a { text-decoration: none; 
 				display: block;}
 		nav a:link { color: #FFFFFF; }
 		nav a:visited { color: #EAEAEA; }
 		nav a:hover {  color: #D3DBEB;}
-		
+		footer { background-color:#72380a;
+				 font-size:100%;
+				 text-align: center;
+				 padding: 10px;
+				 clear: both;}
+		 
 	</style>
 </head>
 <body>
@@ -42,13 +69,44 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="daycare.html">DayCare</a></li>
 			<li><a href="grooming.html">Grooming</a></li>
+			<li><a href="training.html">Training</a></li>
 			<li><a href="vacation.html">Vacation</a></li>
 			<li><a href="about.html">About Us</a></li>
 		</ul>
 	</nav>
 	</header>
+	<main>
 	<div>
-		<img src="bg1.jpg" alt="Dog Picture" height="200" >
+		<img src="bg1.jpg" alt="Dog Picture" width="1510" height="800" >
+	
+		<span class="hometop">Dog Day Care, Boarding, Grooming, & Training</span> 
 	</div>
+	<div class="dogcarefloat">
+		<img src="daycare logo.png" alt="daycare logo" width="200" height="200">
+		<h3>Dog Daycare</h3>
+		<p>Dog daycare should be more than just a place to leave your dog 
+		<br>when you’re unable to be with them. Let your dogs socialize and more exercise. </p>
+	</div>
+	<div class="groomingfloat">
+		<img src="grooming logo.png" alt="grooming logo" width="200" height="200">
+		<h3>Grooming</h3>
+		<p>Coat Tidy Ups,Coat Strip Out,Full Groom Service,Flea and Tick treatments. All kind of services are available in our shop!</p>
+	</div>
+	<div class="trainingfloat">
+		<img src="training logo.png" alt="training" width="200" height="200">
+		<h3>Training</h3>
+		<p>Need a hand with doggie manners? We offer an array of customized training 
+		<br>services for your furry friends.</p>
+	</div>
+	<div class="boardingfloat">
+		<img src="boarding logo.png" alt="boarding" width="200" height="200">
+		<h3>Boarding</h3>
+		<p>Your dog no longer needs to be bored or lonely whether you’re at work or at a vacation.</p>
+	</div>
+	</main>
+	<footer>
+		
+		Copyright &copy; 2017 RCKN
+	</footer>
 </body>
 </html>
