@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> A Dog's Life </title>
+	<link rel="icon" href ="dog fav.png" type="image/x-xicon">
+	<meta charset="utf-8">
+	<style>
+		
+		.head { overflow: hidden;
+				background-color: #72380a;
+				position: fixed; 
+				top: 0; 
+				width: 100%;
+				}
+		.advance {	float: left;
+					margin-right: 10px;}
+		
+		.hometop{ position: absolute;
+						top:350px;
+						opacity: 0.4;
+						text-align: center;
+						width:1530px;
+						height:150px;
+						background-color: white;
+						font-size: 350%;}
+		.mySlides {display:block;}
+		.w3-content{max-width:auto;
+					margin:auto}
+		.w3-animate-right{	position:relative;
+							animation:animateright 2s;
+							}
+						
+		
+		header { text-align: center;
+				 color: #ffb77f;
+				 }
+		body { background-color: #99643b;}
+		nav {   background-color: #ffb172; 
+				letter-spacing: 0.1em;
+				font-weight: bold;
+				text-align: center; 
+				padding-right: 2em;
+				position: relative;} 
+ 	    nav ul { list-style-type: none; 
+					margin: 0;}
+		nav li { padding: 0.5em;
+				 display: inline-block;
+				 font-size: 150%;}
+		nav a { text-decoration: none; 
+				display: block;}
+		nav a:link { color: #FFFFFF; }
+		nav a:visited { color: #EAEAEA; }
+		nav a:hover {  color: #D3DBEB;}
+		footer { background-color:#72380a;
+				 font-size:100%;
+				 text-align: center;
+				 padding: 10px;
+				 clear: both;}
+				 
+		@keyframes animateright{from{right:-300px;opacity:0.5} to{right:0;opacity:1};}
+
+
+	</style>
+</head>
+<body>
+	<header class="head">
+	<h1>A Dog's Life</h1>
+	<nav >
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="daycare.html">DayCare</a></li>
+			<li><a href="grooming.html">Grooming</a></li>
+			<li><a href="training.html">Training</a></li>
+			<li><a href="vacation.html">Vacation</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+	</nav>
+	
+
+	<div class="w3-content" >
+	  <img class="mySlides w3-animate-right" src="dog_training.png" width="1530" height="800">
+	  <img class="mySlides w3-animate-right" src="dog_training02.jpg" width="1530" height="800">
+	  <img class="mySlides w3-animate-right" src="dog_training03.jpeg" width="1530" height="800">
+	  <img class="mySlides w3-animate-right" src="dog_training04.jpeg" width="1530" height="800">
+	</div>		
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {x[i].style.display = "none";  
+										}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 3500);    
+		}
+	</script>
+	</header>
+	<main>
+	
+	<div>
+		<span class="hometop">Dog Training</span> 
+	</div>
+	
+	<div>
+		<img src="training01.jpg" width="450" height="600">
+		<h1> Advance Training <h1>
+		<p> abcdefg </p>
+		
+	</div>
+	</main>
+	<footer>
+		
+		Copyright &copy; 2017 RCKN
+	</footer>
+</body>
+</html>
