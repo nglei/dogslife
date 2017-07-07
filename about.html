@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> A Dog's Life </title>
+	<link rel="icon" href ="dog fav.png" type="image/x-xicon">
+	<meta charset="utf-8">
+	<style>
+		.head { 
+				background-color: #72380a;
+				position: fixed; 
+				top: 0; 
+				width: 100%;}
+		.hometop{ position: absolute;
+						top:500px;
+						opacity: 0.4;
+						text-align: center;
+						width:1518px;
+						height:150px;
+						background-color: white;
+						font-size: 350%;
+						padding-top:70px;}
+				header { text-align: center;
+				 color: #ffb77f;}
+		body { background-color: #e9ccb1;}
+		main {font-family: Georgia, "Times New Roman", serif; }
+		nav {   background-color: #ffb172; 
+				letter-spacing: 0.1em;
+				font-weight: bold;
+				text-align: center; 
+				padding-right: 2em;
+				position: relative;
+				z-index: 10;} 
+
+ 	    nav ul { list-style-type: none; 
+					margin: 0;}
+
+		nav li { padding: 0.5em;
+				 display: inline-block;
+				 font-size: 150%;}
+		nav a { text-decoration: none; 
+				display: block;}
+		nav a:link { color: #FFFFFF; }
+		nav a:visited { color: #EAEAEA; }
+		nav a:hover {  color: #D3DBEB;}
+		
+		 @keyframes slidy {
+							0% { left: 0%; }
+							20% { left: 0%; }
+							25% { left: -100%; }
+							45% { left: -100%; }
+							50% { left: -200%; }
+							70% { left: -200%; }
+							75% { left: -300%; }
+							95% { left: -300%; }
+							100% { left: -400%; }
+							}
+
+			body { margin: 0; } 
+			div#slider { overflow: hidden; }
+			div#slider figure img { width: 20%; float: left; }
+			div#slider figure { 
+			position: relative;
+			width: 500%;
+			margin: 0;
+			left: 0;
+			top: 130px;
+			text-align: left;
+			font-size: 0;
+			animation: 20s slidy infinite; 	}
+			footer { background-color:#72380a;
+				 font-size:100%;
+				 text-align: center;
+				 padding: 20px;
+				 clear: both;}
+		footer p { text-align: left;
+					display: inline-block;
+					width: 200px;
+					height: 20px;
+					margin-left:100px;
+					margin-right:100px;}
+		footer a {text-decoration: none;
+					color: black;}
+		.foot { border-bottom: 2px solid #ffb172;}
+		.copyright { padding: 10px;}
+		div a{text-decoration: none;
+				color: black;}
+		.contact{ float: left;
+					text-align: center;
+					margin-left: 210px;
+					margin-top: 200px;
+					padding: 30px;
+					width: 450px;
+					background-color:#72380a;}
+		.mail { clear: left; 
+						 float: left;
+						 text-align: center;
+						 margin-top: 20px;
+						 margin-left: 210px;
+						 margin-bottom: 20px;
+						 padding: 30px ;
+						 width: 450px;
+						 background-color:#72380a;}
+		.map { float: right;
+				text-align: center;
+				padding: 20px 60px 20px 60px ;
+				margin-right: 250px;
+				margin-top: 200px;
+				background-color:#72380a;}
+		.bg {background-color: white;
+			 opacity:0.4;
+			 padding : 10px;
+			 }
+		.contacts { position: absolute;
+					background-color:#ffb77f;
+					width: 200px;
+					height: 70px;
+					margin-top: 20px;
+					margin-left: 150px;
+					text-align: center;
+					opacaity: 0.5;}
+		.forms { clear: both;
+					float: left;
+				 text-align: center;
+				 width: 800px;
+				 height: 300px;
+				 margin-left: 400px;
+				 margin-bottom: 300px;
+				 margin-top: 100px;}		
+		form { background-color:#72380a;
+				color: #ffb77f;
+				font-family: Arial, sans-serif;
+				padding: 50px;}
+		label { font-size: 200%;}
+		input { width: 200px;
+				height: 50px;
+				margin-top: 10px;
+				text-size: 100px;}
+		.mails {margin-left: 70px;}
+		.fisrt {margin-left: 40px;}
+		.submits { margin-left: 60px;}
+		
+			
+	</style>
+</head>
+<body>
+	<header class="head">
+	<h1>A Dog's Life</h1>
+	<nav >
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="daycare.html">DayCare</a></li>
+			<li><a href="grooming.html">Grooming</a></li>
+			<li><a href="training.html">Training</a></li>
+			<li><a href="vacation.html">Vacation</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+	</nav>
+	</header>
+	<main>
+		<div>
+		<div id="slider">
+	<figure>
+		<img src="slide1.jpg" alt="background image 1" width="1510" height="750">
+		<img src="slide2.jpeg" alt="background image 2" width="1510" height="750">
+		<img src="slide3.jpg" alt="background image 3" width="1510" height="750">
+		<img src="slide4.png" alt="background image 4" width="1510" height="750">
+		
+		</figure>
+	</div>
+	
+		<span class="hometop">About Us</span> 
+	</div>
+	<div class="contact"><div class="bg">
+		<h2>Contact</h2>
+		<p><a href="tel:019-8765432">019-8765432</a>
+			<br><a href="tel:03-8765432">03-8765432</a></p>
+		
+	</div></div>
+	<div class="map">
+		<img src="maps.jpg" alt="shop location" width="400" height="200">
+		<h2>Shop Address</h2>
+		<p>15, Jalan Sri Semantan 1, 
+		<br>Damansara Heights, 
+		<br>50490 Kuala Lumpur, 
+		<br>Wilayah Persekutuan Kuala Lumpur.</p>
+
+	</div>
+	<div class="mail"><div class="bg">
+		<h2>Email Address</h2>
+		<p><a href="mailto:dogslife@gmail.com">dogslife@gmail.com</a></p>
+	</div></div>
+	
+	<div class="forms">
+	
+	<form method="post" action="http://webdevbasics.net/scripts/demo.php" onsubmit="return validateForm();">
+	<h1>Contact Us</h1>
+	First Name:    <input class="fisrt" type="text" name="firstname" id="firstname">
+	<br><br>
+	Last Name:<input class="fisrt" type="text" name="lastname" id="lastname">
+	<br><br>
+	Dog's Name:<input class="fisrt" type="text" name="dog name" id="dog name">
+	<br><br>
+	E-mail: <input class="mails" type="text" name="email" id="email">
+	
+	<br><br>
+	<input class="submits"type="submit" value="Subscribe">
+	
+	</form></div>
+
+
+	
+	
+	</main>
+	<footer>
+			<div class="foot">
+			<p><b>Contact:</b>&nbsp<a href="tel:019-8765432">019-8765432</a></p>
+			<p><b>Email:</b>&nbsp<a href="mailto:dogslife@gmail.com">dogslife@gmail.com</a></p>
+			</div>
+		<div class="copyright">Copyright &copy; 2017 RCKN</div>
+	</footer>
+</body>
+</html>
