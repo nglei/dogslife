@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> A Dog's Life </title>
+	<link rel="icon" href ="dog fav.png" type="image/x-xicon">
+	<meta charset="utf-8">
+	<style>
+		
+		.head { overflow: hidden;
+				background-color: #72380a;
+				position: relative; 
+				top: 0; 
+				width: 100% ;
+				color:#ffb77f;
+				text-align:center;
+				}
+		.hometop{ position: absolute;
+						top:350px;
+						opacity: 0.4;
+						text-align: center;
+						width:1530px;
+						height:150px;
+						background-color: white;
+						font-size: 350%;}
+		.mySlides {display:outline;}
+		.slideshow {max-width:auto;
+					margin: auto;
+				
+					}
+		.slideshow-fading{animation:fading 10s infinite}
+		.vacationVideo {padding-left:465px;
+						padding-top:5px;
+						width:600px;
+						height:315px;
+						display:inline;
+						}
+		
+		#vacation {position: relative;}
+		#vacation ul { 
+					list-style-type: none;
+						float:left;
+						}
+		#vacation li {	display: inline;
+						 padding-right: 60px;
+						float: left;
+						}
+		#details {display:none};
+		header { text-align: center;
+				 color: #ffb77f;
+				 }
+		body { 	background-color: #99643b;
+				margin:0;}
+
+		nav {   background-color: #ffb172; 
+				letter-spacing: 0.1em;
+				font-weight: bold;
+				text-align: center; 
+				padding-right: 2em;
+				position: relative;} 
+ 	    nav ul { list-style-type: none; 
+					margin: 0;}
+		nav li { padding: 0.5em;
+				 display: inline-block;
+				 font-size: 150%;}
+		nav a { text-decoration: none; 
+				display: block;}
+		nav a:link { color: #FFFFFF; }
+		nav a:visited { color: #EAEAEA; }
+		nav a:hover {  color: #D3DBEB;}
+		footer { background-color:#72380a;
+				 font-size:100%;
+				 text-align: center;
+				 padding: 10px;
+				 clear: both;}
+				 
+		@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+
+	</style>
+</head>
+<body>
+	<header class="head">
+	<h1>A Dog's Life</h1>
+	<nav >
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="daycare.html">DayCare</a></li>
+			<li><a href="grooming.html">Grooming</a></li>
+			<li><a href="training.html">Training</a></li>
+			<li><a href="vacation.html">Vacation</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+	</nav>
+	
+
+	</header>
+	<main>
+	<div class="slideshow" >
+		<img class="mySlides slideshow-fading" src="dog_vacation01.jpg" width="1530" height="800">
+		<img class="mySlides slideshow-fading" src="dog_vacation02.jpg" width="1530" height="800">
+		<img class="mySlides slideshow-fading" src="dog_vacation03.jpg" width="1530" height="800">
+		<img class="mySlides slideshow-fading" src="dog_vacation04.jpg" width="1530" height="800">
+	</div>		
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {x[i].style.display = "none";  
+										}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 3500);    
+		}
+	</script>
+	<div>
+		<span class="hometop">Dog Vacation</span> 
+	</div>
+	<video controls="controls" class="vacationVideo">
+		<source src="Dog on Vacation Pyrochill.mp4" type="video/mp4">
+	</video>
+	<div id="vacation">
+		<ul>
+			<li> <img src="dog_vacationA.jpg" width="300" height="300" alt="vacation01"> <br>
+			<li> <img src="dog_vacationB.jpg" width="300" height="300" alt="vacation02"> <br>
+			<li> <img src="dog_vacationC.jpg" width="300" height="300" alt="vacation03"> <br>
+			<li> <img src="dog_vacationD.jpg" width="300" height="300" alt="vacation04"> <br>
+		</ul>
+	</div>
+	<p> As dog owners, we completely empathize with the hardships and lonely feelings that go along with leaving your dog while you travel. </p>
+	</main>
+	<footer>
+		
+		Copyright &copy; 2017 RCKN
+	</footer>
+</body>
+</html>
