@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<style>
 		
-		.head { overflow: hidden;
+		.head { 
 				background-color: #72380a;
 				position: fixed; 
 				top: 0; 
@@ -15,32 +15,51 @@
 						top:500px;
 						opacity: 0.4;
 						text-align: center;
-						width:1510px;
+						width:1518px;
 						height:200px;
 						background-color: white;
 						font-size: 350%;}
 		.dogcarefloat { float: left;
-						margin-right: 10px;}
+						text-align: center;
+						margin-left: 300px;
+						 padding: 30px;
+						background-color:#72380a;}
 		.trainingfloat { clear: left; 
 						 float: left;
-						 margin-right: 10px;}
+						 text-align: center;
+						 margin-top: 20px;
+						 margin-left: 300px;
+						 margin-bottom: 20px;
+						 padding: 30px 85px 30px 80px;
+						 background-color:#72380a;}
 		.groomingfloat { float: right;
-						 margin: 10px;}
+						 text-align: center;
+						 padding: 20px 60px 20px 60px ;
+						  margin-right: 290px;
+						  background-color:#72380a;}
 		.boardingfloat { clear:right;
 						 float: right;
-						 margin-right: 250px;}
-		
+						 text-align: center;
+						 margin-top: 20px;
+						 margin-right: 290px;
+						 margin-bottom: 20px;
+						 padding: 30px 80px 30px 85px;
 						
-		
+						 background-color:#72380a;}
+		.servicesposition { margin-top: 145px;}						
+		div a{ text-decoration: none;
+				color: black;}
 		header { text-align: center;
 				 color: #ffb77f;}
-		body { background-color: #99643b;}
+		body { background-color: #e9ccb1;}
+		main {font-family: Georgia, "Times New Roman", serif; }
 		nav {   background-color: #ffb172; 
 				letter-spacing: 0.1em;
 				font-weight: bold;
 				text-align: center; 
 				padding-right: 2em;
-				position: relative;} 
+				position: relative;
+				z-index: 10;} 
 
  	    nav ul { list-style-type: none; 
 					margin: 0;}
@@ -53,12 +72,84 @@
 		nav a:link { color: #FFFFFF; }
 		nav a:visited { color: #EAEAEA; }
 		nav a:hover {  color: #D3DBEB;}
+		
+		 @keyframes slidy {
+							0% { left: 0%; }
+							20% { left: 0%; }
+							25% { left: -100%; }
+							45% { left: -100%; }
+							50% { left: -200%; }
+							70% { left: -200%; }
+							75% { left: -300%; }
+							95% { left: -300%; }
+							100% { left: -400%; }
+							}
+
+			body { margin: 0; } 
+			div#slider { overflow: hidden; }
+			div#slider figure img { width: 20%; float: left; }
+			div#slider figure { 
+			position: relative;
+			width: 500%;
+			margin: 0;
+			left: 0;
+			top: 130px;
+			text-align: left;
+			font-size: 0;
+			animation: 20s slidy infinite; 
+			
+				}
+		.intro { background-color: #72380a;
+			 position : relative;
+			 width: 1300px;
+			 height: 250px;
+			 left: 50px;
+			 text-align: center;
+			 padding:50px;
+			 margin-top: 230px;}
+		.introbg {  position: absolute;
+				background-color: white;
+				opacity: 0.5;
+				top: 40px;
+				left: 175px;
+				padding: 10px 50px 10px 50px;}
+		#texts { text-indent: 50px;
+			font-size: 125%;
+			line-height: 50px;}
+			
 		footer { background-color:#72380a;
 				 font-size:100%;
 				 text-align: center;
-				 padding: 10px;
+				 padding: 20px;
 				 clear: both;}
-		 
+		footer p { text-align: left;
+					display: inline-block;
+					width: 200px;
+					height: 20px;
+					margin-left:100px;
+					margin-right:100px;}
+		footer a {text-decoration: none;
+					color: black;}
+		.foot { border-bottom: 2px solid #ffb172;}
+		.copyright { padding: 10px;}
+		form {background-color:#eaeaea;
+				font-family: Arial, sans-serif;
+				padding: 10px;
+				display: inline-block;
+				width: 1499px;
+				text-align: center;}
+		label {
+				width: 100px;
+				
+				text-align: left;
+				padding-right: 10px;
+				margin-top: 10px;
+				}
+		input,  {margin-left: 10px;
+						margin-right:20px;
+						margin-top: 10px;}
+		#mySubmit{ margin-left:110px;}}
+		
 	</style>
 </head>
 <body>
@@ -77,36 +168,72 @@
 	</header>
 	<main>
 	<div>
-		<img src="bg1.jpg" alt="Dog Picture" width="1510" height="800" >
+		<div id="slider">
+	<figure>
+		<img src="bg1.jpg" alt="background image 1" width="1510" height="750">
+		<img src="bg2.jpg" alt="background image 2" width="1510" height="750">
+		<img src="bg3.jpg" alt="background image 3" width="1510" height="750">
+		<img src="bg4.jpg" alt="background image 4" width="1510" height="750">
+		
+		</figure>
+	</div>
 	
 		<span class="hometop">Dog Day Care, Boarding, Grooming, & Training</span> 
 	</div>
+	<div class="intro">
+	<div class="introbg">
+	<p id="texts">A Dog's Life, a place that let your dog play and exercise safely in Kuala Lumpur. 
+	<br>Our shop provides variety of services such as grooming, daycare, training and broading. 
+	<br>We have several spacious playrooms and a big green field for training and exercising, one special room for grooming 
+	<br>All our trainers and supervisors are full of experience in training dogs and take care of dogs.</p>
+	</div>
+	</div>
+	<div class="servicesposition">
 	<div class="dogcarefloat">
-		<img src="daycare logo.png" alt="daycare logo" width="200" height="200">
-		<h3>Dog Daycare</h3>
-		<p>Dog daycare should be more than just a place to leave your dog 
-		<br>when you’re unable to be with them. Let your dogs socialize and more exercise. </p>
+		<img src="daycare logo.png" alt="daycare logo" width="100" height="100">
+		<h3><a href="daycare.html">Dog Daycare<a></h3>
+		<p>Feel trouble when you unable to company your dogs? 
+		<br>Don't worry dog daycare is availabke here. 
+		<br>Let your dogs socialize and more exercise. </p>
 	</div>
 	<div class="groomingfloat">
-		<img src="grooming logo.png" alt="grooming logo" width="200" height="200">
-		<h3>Grooming</h3>
-		<p>Coat Tidy Ups,Coat Strip Out,Full Groom Service,Flea and Tick treatments. All kind of services are available in our shop!</p>
+		<img src="grooming logo.png" alt="grooming logo" width="100" height="100"><br><br>
+		<h3><a href="grooming.html">Grooming</a></h3>
+		<p>Coat Tidy Ups,Coat Strip Out,Full Groom Service,<br>Flea and Tick 
+		 treatments. <br>All kind of services are available in our shop!</p>
 	</div>
 	<div class="trainingfloat">
-		<img src="training logo.png" alt="training" width="200" height="200">
-		<h3>Training</h3>
-		<p>Need a hand with doggie manners? We offer an array of customized training 
-		<br>services for your furry friends.</p>
+		<img src="training logo.png" alt="training" width="100" height="100">
+		<h3><a href="training.html">Training</a></h3>
+		<p>Train your dog to an intelligent dogs. <br>We offer an array of 
+		customized <br>training services for your furry friends.</p>
 	</div>
 	<div class="boardingfloat">
-		<img src="boarding logo.png" alt="boarding" width="200" height="200">
-		<h3>Boarding</h3>
-		<p>Your dog no longer needs to be bored or lonely whether you’re at work or at a vacation.</p>
+		<img src="boarding logo.png" alt="boarding" width="100" height="100">
+		<h3><a href="boarding.html">Boarding</a></h3>
+		<p>Do your dog feel bored or lonely when you <br>are at work or at a  
+		vacation? <br>Here also provide vacation for your dog.</p>
+	</div> </div>
+	<div>
+	
+	<form method="post" action="http://webdevbasics.net/scripts/demo.php" onsubmit="return validateForm();">
+	<label>Name:</label>
+	<input type="text">
+	<label>E-mail:</label>
+	<input type="email">
+	<label>Your dog's name:</label>
+	<input type="text" name="dog name" id="dog name">
+	<input type="submit" value="Subscribe for Latest Promotion" id="mySubmit">
+	</form>
 	</div>
 	</main>
+	
 	<footer>
-		
-		Copyright &copy; 2017 RCKN
+			<div class="foot">
+			<p><b>Contact:</b>&nbsp<a href="tel:019-8765432">019-8765432</a></p>
+			<p><b>Email:</b>&nbsp<a href="mailto:dogslife@gmail.com">dogslife@gmail.com</a></p>
+			</div>
+		<div class="copyright">Copyright &copy; 2017 RCKN</div>
 	</footer>
 </body>
 </html>
